@@ -1,12 +1,18 @@
 body{
-
-background-color:orange ;
-
-background-color: black;
-
-background-color: blueviolet;
-
-
+    background-color: rgb(236, 120, 3);
+}
+ 
+body{
+    font-style: italic;
+}
 
 
+body{font: italic;
+}
+
+div{background-color:blueviolet;
+
+}
+
+h1{border-style:dashed
 }
