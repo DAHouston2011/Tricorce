@@ -7,14 +7,12 @@
     <title>Demo Day</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">YGT7</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -25,24 +23,78 @@
               <a class="nav-link" href="ABOUTUS.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="CONTACT.html">Contact Us</a>
+              <a class="nav-link" href="">Contact Us</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Journey Sims</a></li>
-                <li><a class="dropdown-item" href="#">Kaden Jobarteh</a></li>
-                <li><a class="dropdown-item" href="#">David Houston</a></li>
+                <li><a class="dropdown-item" href="journeyvideo.html">Journey Sims</a></li>
+                <li><a class="dropdown-item" href="kadenvideo.html">Kaden Jobarteh</a></li>
+                <li><a class="dropdown-item" href="davidvideo.html">David Houston</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <h1>Welcome To Tricorce</h1>
+    <h1>Welcome To Tricorce Travel Agent</h1>
     
+    <p> Enter Travel Destination:</p> 
+  <br>
+  <input type="text" id="box" value="Destination Entry"/>
+  <br>
+  <input type="button" value="Add Item" onclick="addItem();"/>
+  <br>
+  <div id="list"></div>
+
+
+
+
+
+  <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Athens+Greece">
+</iframe>
+
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Tokyo+Japan">
+</iframe>
+
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Sydney+Australia">
+</iframe>
+
+<script>
+function addItem () {
+  var newItem = document.createElement("div");
+  newItem.innerHTML = document.getElementById("box").value;
+  newItem.onclick = removeItem;
+  document.getElementById("list").appendChild(newItem);
+}
+function removeItem(){
+  document.getElementById("list").removeChild(this);
+}
+
+</script>
 
   </body>
 
