@@ -1,13 +1,27 @@
 body{
+    background-color: blueviolet;
+    font: white;
+}
+ 
+body{
+    font-style: white
+     
+    
+    
+}
 
-    background-color: black;
+body {
+  background-image: url(purple3.jpg)
+}
 
 
-    background-color:orange ;
+body{font: italic;
+}
 
-background-color: blueviolet;
+div{background-color:blueviolet;
 
-font-style: white;
-background-image: url(Black\ and\ White\ Modern\ Clean\ Minimalist\ Creative\ Technology\ Logo\ \(1\).jpg);
+}
+
+h1{border-style:dashed;
 
 }
